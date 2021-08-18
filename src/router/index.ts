@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import {ParentComponent} from "@/views/parent";
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: ParentComponent
   },
   {
     path: '/about',
